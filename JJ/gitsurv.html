@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Survey Form</title>
+     <link rel="stylesheet" type="text/css" href="gitsurv.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="head">GitHub Survey Form</h1>
+        <h2 id="subheading"><i>Thank you for taking your time to improve the platform</i></h2>
+    </div>
+    <form method="POST" action="survey.php">
+        <div id="content1">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="box"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="box"><br><br>
+            <label for="age">Age (optional)</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter your age" class="box"><br><br>
+            <label for="role">Which option best describes your current role?</label><br><br>
+            <div id="optionl">
+                <select name="role">
+                    <option value="Select your role">Select your role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full-time job">Full-time job</option>
+                    <option value="Full-time learner">Full-time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+			</div>
+			<br>
+			<label id="head1">would you recommend GitHub to a friend?</label> <br><br>
+			<input type="radio" name="recommendation" value="Definitely" class="larger">Definitely<br><br>
+			<input type="radio" name="recommendation" value="Maybe" class="larger">Maybe<br><br>
+			<input type="radio" name="recommendation" value="Not Sure" class="larger">Not Sure<br><br>
+			<label>What is your favourite thing about GitHub?</label>
+			<div id="option2">
+			    <select name="favourite">
+					<option value="select an option">select an option</option>
+					<option value="challenges">challenges</option>
+					<option value="projects">projects</option>
+					<option value="community">community</option>
+					<option value="open source">open source</option>
+				</select>
+				
+			</div>
+			<br><br>
+			<label id="head2">what would you like to see GitHub improved? (check all that apply)</label><br>
+			<div id="content2">
+			    <input type="checkbox" name="checkbox" class="larger"><label>Ease of use</label><br><br>
+				<input type="checkbox" name="checkbox" class="larger"><label>Documentation</label><br><br>
+				<input type="checkbox" name="checkbox" class="larger"><label>Collaboration features</label><br><br>
+				<input type="checkbox" name="checkbox" class="larger"><label>Search functionality:</label><br><br>
+				<input type="checkbox" name="checkbox" class="larger"><label>Community engagement</label><br><br>
+			</div>
+			<label id="head2">Any comments or suggestion?</label> <br><br>
+			<textarea placeholder="Enter Your Comments Here"></textarea> <br>
+			<button><h3>Submit</h3></button>
+			<div>
+		</form>
+</body>
+</html>
