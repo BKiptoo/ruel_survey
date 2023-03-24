@@ -16,7 +16,7 @@ $comments = $_POST['comments'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "brian";
+$dbname = "survey_db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
